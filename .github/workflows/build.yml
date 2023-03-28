@@ -18,6 +18,6 @@ jobs:
       uses: cflynn07/github-action-til-autoformat-readme@1.2.0
       with:
         description: |
-          코딩테스트 자체 풀이 모음
+          코딩테스트 자체 풀이 모음.
         list_most_recent: 2 # optional, lists most recent TILS below description
         date_format: "2020 Jan 15:04" # optional, must align to https://golang.org/pkg/time/#Time.Format
