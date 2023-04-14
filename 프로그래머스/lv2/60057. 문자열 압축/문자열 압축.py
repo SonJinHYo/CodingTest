@@ -21,15 +21,3 @@ def solution(s):
         answer.append(len(ss))
         
     return min(answer)
-
-
-
-
-
-
-
-
-
-
-
-
