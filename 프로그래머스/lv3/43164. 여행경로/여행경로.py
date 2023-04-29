@@ -1,9 +1,11 @@
+from collections import defaultdict
+
 def solution(tickets):
     # 1. 그래프 생성
-    routes = dict()
+    routes = defaultdict(list)
 
-    for (start, end) in tickets:
-        routes[start] = routes.get(start, []) + [end]  
+    for start,end in tickets:
+        routes[start].append(end)
 
     # 2. 시작점 - [끝점] 역순으로 정렬    
     for r in routes.keys():
